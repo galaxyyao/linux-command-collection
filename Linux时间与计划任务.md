@@ -23,7 +23,7 @@ date -s 13:00:00
 date +%Y%m%d -s "20170101"
 ```
 
-## 2. NTP始终同步
+## 2. NTP时钟同步
 **ntp同步时间**  
 ```
 ntpdate cn.pool.ntp.org

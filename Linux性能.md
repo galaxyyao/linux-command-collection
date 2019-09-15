@@ -62,7 +62,7 @@ vmstat -s
 htop
 ```
 
-## 硬盘
+### 2.3 硬盘
 ```
 sudo fdisk -l
 hdparm -i /dev/device (for example sda1, hda3...)

@@ -1,4 +1,4 @@
-# Linux Shell
+# Linux Shell语法
 ## 1. 基本语法与数据结构
 ### 1.1 if...else
 ```shell

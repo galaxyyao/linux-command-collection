@@ -129,13 +129,9 @@ cat /etc/ssh/sshd_config|grep RootLogin
 
 参考资料：[SSH登陆问题及排查思路](https://www.infoq.cn/article/pqU7iMf8cHpz-RNLOslJ)
 
-
-
-
-
-
-NMAP
+### 2.4 NMAP
 网络映射器，用于网络发现和安全审计的网络安全工具
+```
 nmap -sP 192.168.0.0/24   判断哪些主机存活
 nmap -sT 192.168.0.3   开放了哪些端口
 nmap -sS 192.168.0.127 开放了哪些端口（隐蔽扫描）
@@ -143,3 +139,4 @@ nmap -sU 192.168.0.127 开放了哪些端口（UDP）
 nmap -sS -O  192.168.0.127 操作系统识别
 nmap -sT -p 80 -oG – 192.168.1.* | grep open    列出开放了指定端口的主机列表
 nmap -sV -p 80 thief.one  列出服务器类型(列出操作系统，开发端口，服务器类型,网站脚本类型等)
+```
