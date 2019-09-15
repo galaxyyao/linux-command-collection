@@ -16,6 +16,13 @@ echo -e "I \033[31mLOVE\033[0m CHINA"
 echo -e "I \033[41mLOVE\033[0m CHINA"
 ```
 
+**终端支持256色**  
+参考资料：http://www.cnblogs.com/yangyangup/p/5146861.html  
+```
+tput colors
+```
+如果不支持xterm-256color，则用`yum install ncurses`，然后`export TERM='xterm-256color'`
+
 # 2. 输出
 - 1 表示stdout标准输出，系统默认值是1，所以`>/dev/null`等同于`1>/dev/null`
 - 2 表示stderr标准错误

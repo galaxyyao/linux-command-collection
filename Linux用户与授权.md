@@ -91,3 +91,11 @@ su - <用户>
 ```
 runuser -l <用户名> -c '命令'
 ```
+
+## 5. SUDO
+**查看sudo PATH**  
+```
+vi /etc/sudoers
+```
+相关配置在`secure_path`中  
+

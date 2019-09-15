@@ -92,6 +92,11 @@ if [ -n "$var" ]; then
 fi
 ```
 
+**检查package是否安装**  
+```
+rpm -qa | grep 包名
+```
+
 **文件MD5**  
 ```shell
 md5=`md5sum package-lock.json | awk '{ print $1 }'`
@@ -120,6 +125,31 @@ EOF
 **当前时间**  
 ```shell
 now=$(date +%T)
+```
+
+**交互默认输入yes**  
+```shell
+yes | 命令
+```
+
+**变量与异常检查**  
+遇到不存在变量退出  
+```
+set -o nounset
+```
+遇到异常退出  
+```
+set -o errexit
+```
+
+**日志函数**  
+```
+log() { #classic logger
+  local prefix="[$(date +%Y/%m/%d\ %H:%M:%S)]: "
+  echo "${prefix} $@" >&2
+}
+
+log "INFO" "message"
 ```
 
 ## 3. Expect自动化交互
